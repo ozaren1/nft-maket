@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:wght@500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%) no-repeat;
+    font-weight: 500;
+    color: #fff;
+}
+.header{
+    max-width: 1197px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 20px 15px 110px 15px;
+}
+.header__logo{
+    display: block;
+    background-image: url(../images/PsychoArt.png);
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 133px;
+}
+.form{
+    position: relative;
+}
+.form__button{
+    display: block;
+    background-image: url(../images/search.svg);
+    width: 20px;
+    height: 20px; 
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 10px;
+}
+.form__button__input{
+    background-color: transparent;
+    border:none;
+    width: 384px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 15px;
+
+
+}
+.form__button__input:focus{
+    outline: none;
+}
+.form__button__input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__list{
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    font-size: 20px;
+    padding-left: 0;
+}
+.header__link{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s linear;
+}
+.header__link:hover{
+    color:  rgba(255, 255, 255, 0.4);
+    
+}
+.header__link__gradient{
+    padding: 10px 20px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    border-radius: 10px;
+}
+.header__link__gradient:hover{
+   color:#fff;
+   background: rgba(255, 255, 255, 0.5);
+
+}
+
+
+
+.container{
+    max-width: 1197px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__img{
+width: 100%;
+}
+.main__text{
+    flex-basis: 490px;
+}
+.main__image{
+    flex-basis:calc(100% - 490px - 116px);
+}
+.main__title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.main__desc{
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    margin-bottom: 35px;
+   
+}
+.main__btn{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    transition: all 0.8s linear;
+}
+.main__btn:hover{
+    color: #fff;
+    background:rgba(255, 255, 255, 0.5);
+    
+}
+.main__btn__gradient{
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    margin-right: 20px;
+    
+}
+
+.main__list{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    justify-content: space-between;
+   
+}
+.main__item{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-top: 50px;
+}
+.main__span{
+    display: block;
+    color: #fff;
+    font-size:30px ;
+    font-weight: 700;
+}
+.company{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 390px;
+    margin: 100px auto 0;
+}
+.desc{
+    font-size: 20px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    max-width: 420px;
+    margin: 0 auto;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card__item{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 26px;
+    flex-basis: 32%;
+    box-sizing: border-box; /*пэддинг не расширяет контейнер*/
+    transition: all 0.4s linear;
+}
+.card__item:hover{
+    background: rgba(255, 255, 255, 0.5);
+    
+}
+.card__cover{
+    position: relative;
+    overflow: hidden; /* обрезаем контент который вылез за контейнер*/
+    width: 100%;
+    height: 380px;
+}
+.card__img{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 380px;
+    transform: translate(-50%, -50%); /*  не совсем понял заче задавать топ и левт а потом вычетать ?????*/
+    object-fit: cover; /* подстраивание картинки в размер с сохранением пропорций*/
+}
+.card__info{
+    display: flex;
+    justify-content: space-between;
+}
+.card__nick{
+    font-size: 20px;
+    color: rgba(255, 255, 255, .5);
+}
+.card__author{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card__price{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0;
+}
+.card__bid{
+    text-align: right;
+    font-size: 15px;
+    color: rgba(255, 255, 255, .5);
+}
+.card__link{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    transition: all 1s linear;
+
+}
+.card__link:hover{
+    background: linear-gradient(214.02deg, #6112a1 6.04%, #4003a1 92.95%);
+}
+
+
+/*FAQ*/
+
+.collapsible {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: all 0.2s linear;
+    margin-bottom: 32px;
+    
+  }
+  
+.active, .collapsible:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+  
+.collapsible:after {
+    content: '\002B';
+    color: rgba(255, 255, 255, 0.5);
+    
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+    color: rgba(255, 255, 255, 1);
+}
+  
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    line-height: 1.5;
+    
+}
+
+.faq{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.faq__item{
+    flex-basis: 48%;
+    
+}
+
+.banner{
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 15px;
+    margin: 100px 0 50px;
+}
+.banner__title{
+    line-height: 1.5;
+    font-size: 50px;
+    font-weight: 700;
+    max-width: 500px;
+    margin: 0 auto 40px ;
+    
+}
+.banner__link{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all 0.4s linear;
+}
+.banner__link:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header__buttons{
+    display: none;
+}
+/*Адаптив*/
+
+@media(max-width: 1130px){
+    .header, .container{
+        max-width: 900px;
+    }
+    .header__list{
+        gap: 20px;
+        font-size: 16px;
+    }
+    .form__button__input{
+        width: 260px;
+        padding: 13px 13px 13px 40px;
+        font-size: 14px;
+    }
+    
+    .main__text{
+        flex-basis: 450px;
+    }
+    .main__title{
+        font-size: 43px;
+    }
+    .main__desc, .main__btn, .main__item, .desc, .card__link, .collapsible{
+        font-size: 18px;
+    }
+    .main__image{
+        flex-basis:calc(100% - 450px - 30px);
+    }
+    .main__span{
+        font-size: 26px;
+    }
+    .main__list{
+        gap: 40px;
+        justify-content: flex-start;
+    }
+    .company__img{
+        height: 52px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .card__cover, .card__img{
+        height: 300px;
+    }
+    .card__price, .card__author, .card__nick{
+        font-size: 16px;
+    }
+}
+@media(max-width: 880px){
+    .header, .container{
+        max-width: 750px; /* разрешение у айпада мини 768px*/
+    }
+    .header__buttons{
+        display: flex;
+    }
+    .form, .header__nav{
+        display: none;
+    }
+    .header__search,
+    .header__menu{
+        display: block;
+        border: none;
+        background: transparent;
+        height: 20px;
+    }
+    .header__search{
+        background-image: url(../images/search.svg);
+        width: 20px;
+        background-repeat: no-repeat;
+    }
+    .header__menu{
+        background-image: url(../images/burger.svg);
+        width: 23px;
+        margin-left: 22px;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+    .main{
+        position: relative;
+    }
+    .main__image{
+        position: absolute;
+        flex-basis: inherit;
+        max-width: 33vw;
+        bottom: 0;
+        right: 0;
+        
+        
+        
+
+    }
+    .card__cover, .card__img{
+        height: 30vw;
+    }
+    .card__item{
+        padding: 15px;
+    }
+    .company__img{
+        height: 5.5vw;
+    }
+    .card__info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .card__bid{
+        text-align: center;
+        margin-top: 20px;
+
+    }
+    .banner__title{
+        font-size: 30px;
+    }
+    .banner{
+        padding: 30px 15px 45px;
+    }
+}
+@media(max-width: 600px){
+    .header{
+        padding-bottom: 60px;
+    }
+    .header, .container{
+        max-width: 400px;
+    }
+    .faq, .card{
+        flex-direction: column;
+        
+    }
+    .main__text{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .main__list{
+        justify-content: center;
+    }
+    .main__title{
+        font-size: 34px;
+    }
+    .company{
+        align-items: flex-start;
+        margin: 30px 0 100px;
+    }
+    .company__img{
+        margin-bottom: 15px;
+        height: 3.8vw;
+    }
+    .card{
+        max-width: 300px;
+        margin: 30px auto 100px;
+    }
+    .card__item{
+        margin-bottom: 15px;
+
+    }
+    .card__cover, .card__img{
+        height: 50vw;
+    }
+    .main__image{
+        display: none;
+    }
+    .main__desc, .main__btn, .main__item, .desc, .card__link, .collapsible, .banner__link{
+        font-size: 16px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .banner__title{
+        font-size: 22px;
+    }
+    
+
+}
+@media(max-width: 500px){
+    .company__img{
+        height: 4.8vw;
+    }
+    .card__cover, .card__img{
+        height: 60vw;
+    }
+}
+@media(max-width: 400px){
+    .company__img{
+        height: 5.3vw;
+    }
+}
